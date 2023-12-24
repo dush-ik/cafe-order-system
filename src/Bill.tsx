@@ -21,8 +21,12 @@ const Bill: FC<BillProps> = ({ orderCount }):JSX.Element => {
     <section className='bill'>
       <h2>Your bill</h2>
       <hr />
-      <p className='bill__total-item'>Item ordered: {getTotalCount()}</p>
-      <p className='bill__total-price'>Total price: {getTotalPrice()}</p>
+      <p className='bill__total-item'>
+        <span id="count">Item ordered: {getTotalCount()}</span>
+      </p>
+      <p className='bill__total-price'>
+        <span id="price">Total price: {getTotalPrice()}</span>
+      </p>
     </section>
   )
 }
