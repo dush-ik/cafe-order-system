@@ -1,0 +1,40 @@
+.app {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2rem;
+  gap: 1.25rem;
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd hd hd hd hd"
+  ". main main main main . . sd sd sd sd .";
+}
+
+.app__header {
+  text-align: center;
+  grid-area: hd;
+  margin-bottom: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app__main {
+  grid-area: main;
+}
+
+.app__aside {
+  grid-area: sd;
+}
+
+.beverage {
+  padding: 0.5rem;
+  border: 1px solid;
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.bill__total-item, .bill__total-price {
+  font-size: 1.2rem;
+}
